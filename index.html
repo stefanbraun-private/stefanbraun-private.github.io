@@ -20,43 +20,75 @@
 		<table>
 			<tr>
 				<th>Toolname</th>
+				<th>Description</th>
+				<th>Technology/Dependencies</th>
 				<th>Screenshot</th>
 			</tr>
 			<tr>
 				<td>BMO Tie-Point-Info</td>
-				<td><img src="./img/screenshot_BMO_Tie-Point-Info.PNG" alt="screenshot_BMO_Tie-Point-Info.PNG"></td>
+				<td>Copy a BMO (VLO) from Grafikeditor into clipboard and get information for all rootlevel BMO-attributes.</td>
+				<td>ProMoS DLL v1.5 - v1.7</td>
+				<td><a href="./img/screenshot_BMO_Tie-Point-Info.PNG"><img src="./img/screenshot_BMO_Tie-Point-Info.PNG" alt="screenshot_BMO_Tie-Point-Info.PNG"></a></td>
 			</tr>
 			<tr>
 				<td>DMS Value Changer</td>
-				<td><img src="./img/screenshot_DMS_Value_Changer.PNG" alt="screenshot_DMS_Value_Changer.PNG"></td>
+				<td>Retrieves all current values of a given list of DMS keys. In combination with Excel an efficient way for changing many different DMS-values. It generates DMS-exportfiles before and after writing for simple reversing this DMS-changes.</td>
+				<td>ProMoS DLL v1.5 - v1.7</td>
+				<td><a href="./img/screenshot_DMS_Value_Changer.PNG"><img src="./img/screenshot_DMS_Value_Changer.PNG" alt="screenshot_DMS_Value_Changer.PNG"></a></td>
 			</tr>
 			<tr>
 				<td>PSC file selector</td>
-				<td><img src="./img/screenshot_PSC_file_selector.PNG" alt="screenshot_PSC_file_selector.PNG"></td>
+				<td>Enables opening PSC files in Grafikeditor by doubleclick in a directory browser. Uses Regex filter for filenames and Regex fulltext-search. Context menu allows open a file in Windows Explorer, Notepad++ and copying filename to clipboard.</td>
+				<td>ProMoS DLL v1.5 - v1.7</td>
+				<td><a href="./img/screenshot_PSC_file_selector.PNG"><img src="./img/screenshot_PSC_file_selector.PNG" alt="screenshot_PSC_file_selector.PNG"></a></td>
 			</tr>
 			<tr>
 				<td>Renumber Tool</td>
-				<td><img src="./img/screenshot_Renumber_Tool.PNG" alt="screenshot_Renumber_Tool.PNG"></td>
+				<td>Automation of renumbering of absolute flag-/register-/datablock-addresses in currently running project. Then generate code with PET as usual.</td>
+				<td>ProMoS DLL v1.5 - v1.7</td>
+				<td><a href="./img/screenshot_Renumber_Tool.PNG"><img src="./img/screenshot_Renumber_Tool.PNG" alt="screenshot_Renumber_Tool.PNG"></a></td>
 			</tr>
 			<tr>
 				<td>Search BMO Instances</td>
-				<td><img src="./img/screenshot_Search_BMO_Instances.PNG" alt="screenshot_Search_BMO_Instances.PNG"></td>
+				<td>Listing tool for searching in currently running DMS for all instances of a specific BMO. It has filter possibilities as Regex in DMS-key and it's NAME attribute.</td>
+				<td>ProMoS DLL v1.5 - v1.7</td>
+				<td><a href="./img/screenshot_Search_BMO_Instances.PNG"><img src="./img/screenshot_Search_BMO_Instances.PNG" alt="screenshot_Search_BMO_Instances.PNG"></a></td>
 			</tr>
 			<tr>
 				<td>DMS tracer</td>
-				<td><img src="./img/screenshot_DMS_tracer.PNG" alt="screenshot_DMS_tracer.PNG"></td>
+				<td>Monitoring of adding, value changing or deletion of DMS keys. It polls all subkeys under given DMS-key and logs differences to console.</td>
+				<td>ProMoS DLL v1.5 - v1.7</td>
+				<td><a href="./img/screenshot_DMS_tracer.PNG"><img src="./img/screenshot_DMS_tracer.PNG" alt="screenshot_DMS_tracer.PNG"></a></td>
 			</tr>
 			<tr>
 				<td>DMS Controlfunction</td>
-				<td><img src="./img/screenshot_DMS_Controlfunction.png" alt="screenshot_DMS_Controlfunction.png"></td>
+				<td>Python as external DMS controlfunction (Leitfunktion): evaluates given Python expressions when monitored DMS datapoints have changed, then writes results back into DMS. First program which uses the new in pyVisiToolkit implemented "ProMoS DMS JSON Data Exchange"(c), reading, writing and monitoring DMS datapoints via WebSocket. :-D</td>
+				<td>JSON over WebSocket, ProMoS v1.7 - v2.x</td>
+				<td><a href="./img/screenshot_DMS_Controlfunction.png"><img src="./img/screenshot_DMS_Controlfunction.png" alt="screenshot_DMS_Controlfunction.png"></a></td>
 			</tr>
 			<tr>
 				<td>Ping Trend</td>
-				<td><img src="./img/screenshot_Ping_Trend.PNG" alt="screenshot_Ping_Trend.PNG"></td>
+				<td>Executing Ping.exe as background task, interprets output of Ping.exe and writing the "Round Trip Time" to a DMS key. Commandline arguments: one or more ping targets. One instance of Ping.exe per ping target runs concurrently and invisible in background.</td>
+				<td>JSON over WebSocket, ProMoS v1.7 - v2.x</td>
+				<td><a href="./img/screenshot_Ping_Trend.PNG"><img src="./img/screenshot_Ping_Trend.PNG" alt="screenshot_Ping_Trend.PNG"></a></td>
 			</tr>
 			<tr>
 				<td>TCP Relay</td>
-				<td><img src="./img/screenshot_TCP_Relay.PNG" alt="screenshot_TCP_Relay.PNG"></td>
+				<td>A TCP relay between TCP client application and TCP server daemon for debugging of cleartext TCP connections. Useful e.g. for SMTP-AUTH or other problems when setting up MALM eMail.</td>
+				<td>---</td>
+				<td><a href="./img/screenshot_TCP_Relay.PNG"><img src="./img/screenshot_TCP_Relay.PNG" alt="screenshot_TCP_Relay.PNG"></a></td>
+			</tr>
+			<tr>
+				<td>Generate BMO Link Graph</td>
+				<td>Exports a GV-file with all links between the BMOs of the currently active project. Needs "Graphviz" for rendering the network graph as SVG-file.</td>
+				<td>Graphviz</td>
+				<td>---</td>
+			</tr>
+			<tr>
+				<td>Preview Accessrights</td>
+				<td>Provides a preview of graphic user input elements contained in a PSC file filtered by userlevel.</td>
+				<td>---</td>
+				<td>---</td>
 			</tr>
 		</table>
 		</p>
