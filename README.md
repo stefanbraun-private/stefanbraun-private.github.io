@@ -1,2 +1,2 @@
-GitHub Page for my project "pyVisiToolkit"
-https://github.com/stefanbraun-private/pyVisiToolkit
+GitHub Page for my projects "visitoolkit" and "pyVisiToolkit"
+https://github.com/stefanbraun-private
